@@ -1,18 +1,20 @@
 $(document).ready(function(){
-var password="ScriptEd"
+    var password="ScriptEd"
 $("#button").click(function() {
 
-var name = 
-$("#password").val();
-
-
-if(password===name){
-    //return "WOOOOOOOHHHH!!111! You guessed the secret word!";
+if(password===$("#password").val()){
     $("p").append("right password");
-} else {
-    //return "You are wrong";
-     $("p").append("wrong password");
 }
 
+if(password !== $("#password").val()){
+     $("p").append("wrong password");
+     alert('stuff');
+
+}
+
+// alert($("#password").val());
 });
 });
+
+
+
